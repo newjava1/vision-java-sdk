@@ -1,4 +1,4 @@
-# visionjsdk
+# vision-java-sdk
 
 The VISION JAVA client library.
 
