@@ -1,8 +1,6 @@
 # visionjsdk
 
-The VISION client library.
-
-Visionjsdk document: https://visionjsdkdocument.readthedocs.io/en/latest/
+The VISION JAVA client library.
 
 ## How to use
 
@@ -13,7 +11,7 @@ Add repo setting:
 ```groovy
 repositories {
     maven {
-        url  "https://dl.bintray.com/visionjsdk/visionjsdk"
+        url  "https://XXXXXX/visionjsdk/visionjsdk"
     }
 }
 ```
@@ -66,7 +64,7 @@ Function function =
                 Arrays.asList(
                         new DynamicBytes("dave".getBytes()),
                         new Bool(true),
-                        new Address("T9yKC9LCoVvmhaFxKcdK9iL18TUWtyFtjh"),
+                        new Address(""),
                         new DynamicArray<>(
                                 new Uint(BigInteger.ONE),
                                 new Uint(BigInteger.valueOf(2)),
@@ -74,17 +72,5 @@ Function function =
                 Collections.emptyList());
 String encodedHex = FunctionEncoder.encode(function);
 
-/*
-465c405b
-0000000000000000000000000000000000000000000000000000000000000080
-0000000000000000000000000000000000000000000000000000000000000001
-00000000000000000000000000052b08330e05d731e38c856c1043288f7d9744
-00000000000000000000000000000000000000000000000000000000000000c0
-0000000000000000000000000000000000000000000000000000000000000004
-6461766500000000000000000000000000000000000000000000000000000000
-0000000000000000000000000000000000000000000000000000000000000003
-0000000000000000000000000000000000000000000000000000000000000001
-0000000000000000000000000000000000000000000000000000000000000002
-0000000000000000000000000000000000000000000000000000000000000003
-*/
+
 ```
